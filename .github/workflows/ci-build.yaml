@@ -1,4 +1,4 @@
-name: Integration tests AMD64
+name: Integration tests AMD64 ...
 on: 
   push:
     branches:
