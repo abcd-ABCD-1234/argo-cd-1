@@ -1,4 +1,4 @@
-name: Integration tests
+name: Integration tests AMD64
 on: 
   push:
     branches:
@@ -111,8 +111,8 @@ jobs:
           make install-test-tools-local
       - name: Setup git username and email
         run: |
-          git config --global user.name "John Doe"
-          git config --global user.email "john.doe@example.com"
+          git config --global user.name "abcd-ABCD-1234"
+          git config --global user.email "dummydummygithub@gmail.com"
       - name: Download and vendor all required packages
         run: |
           go mod download
@@ -174,8 +174,8 @@ jobs:
           make install-test-tools-local
       - name: Setup git username and email
         run: |
-          git config --global user.name "John Doe"
-          git config --global user.email "john.doe@example.com"
+          git config --global user.name "abcd-ABCD-1234"
+          git config --global user.email "dummydummygithub@gmail.com"
       - name: Download and vendor all required packages
         run: |
           go mod download
@@ -396,8 +396,8 @@ jobs:
           make install-test-tools-local
       - name: Setup git username and email
         run: |
-          git config --global user.name "John Doe"
-          git config --global user.email "john.doe@example.com"
+          git config --global user.name "abcd-ABCD-1234"
+          git config --global user.email "dummydummygithub@gmail.com"
       - name: Pull Docker image required for tests
         run: |
           docker pull quay.io/dexidp/dex:v2.25.0
